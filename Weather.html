@@ -10,25 +10,23 @@
 <header>Weather Dashboard</header>
 
 <body>
-    <div class="jumbotron">
-        <h2 class="text-center">Get Current Weather</h2>
+    <div class="wrap">
+        <header>
+            <input type="text" autocomplete="off" class="search-box"
+            placeholder="Search for a city" />
+        </header>
+        <main>
+            <section class="location">
+                <div class="city">Norththampton, GB</div>
+                <div class="date">Friday 24 July 2020</div>
+            </section>
+            <div class="current">
+                <div class="temp"><span>*c</span></div>
+                <div class="weather">Sunny</div>
+                <div class="hi-low">13*c / 16*c</div>
+            </div>
+        </main>
     </div>
-
-    <div class="container">
-        <div class="row">
-            <h3 class="text-center text-primary">Enter City Name</h3>
-        </div>
-    </div>
-
-    <div class="row form-group form-inline" id="rowdiv">
-        <input type="text" name="city" id="city" class="form-control" placeholder="City Name" />
-        <button id="submitWeather" class="btn btn-primary">Search city</button>
-    </div>
-
-    <div id="show"></div>
-
-    </div>
-    <script src="https://ajax.googleapis.com/ajx/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="Main.js"></script>
 </body>
 
